@@ -198,7 +198,7 @@ $(document).ready(function() {
   
   function initChart(pane, index, name) {
     var colorKeys = Object.keys(COLORS);
-    var opts = TIMELINE_OPTIONS;
+    var opts = $.extend({}, TIMELINE_OPTIONS);
     var workerSeries = pane.data("series");
     var chart = null;
     var canvas = $("canvas", pane).eq(index);
