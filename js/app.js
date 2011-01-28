@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  var HYDNA_MONITOR_URL = "localhost:7010/xffffffff"
-  var HYDNA_BROADCAST_URL = "localhost:7010/xfffffffe"
+  var HYDNA_MONITOR_URL = "demo.hydna.net/xffffffff"
+  var HYDNA_BROADCAST_URL = "demo.hydna.net/xfffffffe"
   var NO_OF_CHARTS = 4;
   var COLORS = {
     "red":    "244, 52, 0",
