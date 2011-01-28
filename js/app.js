@@ -37,6 +37,12 @@ $(document).ready(function() {
   var panes = [];
   var broadcaststream = new HydnaStream(HYDNA_BROADCAST_URL, "w");
   
+  if(!Object.keys) Object.keys = function(o){
+    var ret=[],p;
+    for(p in o) if(Object.prototype.hasOwnProperty.call(o,p)) ret.push(p);
+    return ret;
+  }  
+  
   $("footer button").click(function() {
     if (broadcaststream.writable) {
       for (var i = 0; i < 10; i++) {
